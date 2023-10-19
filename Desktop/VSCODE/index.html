@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Roth's Stability Criterion</title>
+</head>
+<body>
+    <h1>Roth's Stability Criterion</h1>
+    <p>Enter your transfer function:</p>
+    <input type="text" id="transferFunction">
+    <button onclick="calculateStability()">Calculate</button>
+    <p id="result"></p>
+
+    <script>
+        function calculateStability() {
+            const transferFunction = document.getElementById("transferFunction").value;
+            // Parse the input and perform the stability analysis here
+            // Use a JavaScript library or code you've implemented.
+            const stabilityResult = calculateStability(transferFunction);
+            document.getElementById("result").innerText = `Stability: ${stabilityResult}`;
+        }
+    </script>
+</body>
+</html>
